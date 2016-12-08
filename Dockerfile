@@ -18,6 +18,6 @@ WORKDIR /root/build
 RUN chmod u+x configure.sh
 RUN ./configure.sh
 
-EXPOSE 80
+EXPOSE 8888
 
 CMD ["/usr/bin/supervisord","-c","/etc/supervisor/supervisord.conf"]
